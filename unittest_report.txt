@@ -1,0 +1,481 @@
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test (test_dijkstra.DijkstraTest) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... FAIL
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... FAIL
+test_way_exists (test_dijkstra.DijkstraTest) ... ok
+
+======================================================================
+FAIL: test_no_way (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 28, in test_no_way
+    self.assertEqual([], list(self.graph.dijkstra('a', 'g')))
+AssertionError: Lists differ: [] != ['g']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'g'
+
+- []
++ ['g']
+
+======================================================================
+FAIL: test_vertex_not_exist (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 25, in test_vertex_not_exist
+    self.assertEqual([], list(self.graph.dijkstra('m', 'z')))
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/dijkstra.py", line 15, in dijkstra
+    assert source in self.vertices
+AssertionError
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=2)
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... FAIL
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... FAIL
+test_way_exists (test_dijkstra.DijkstraTest) ... ok
+
+======================================================================
+FAIL: test_no_way (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 28, in test_no_way
+    self.assertEqual([], list(self.graph.dijkstra('a', 'g')))
+AssertionError: Lists differ: [] != ['g']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'g'
+
+- []
++ ['g']
+
+======================================================================
+FAIL: test_vertex_not_exist (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 25, in test_vertex_not_exist
+    self.assertRaises(AssertionError, self.graph.dijkstra('m', 'z'))
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/dijkstra.py", line 15, in dijkstra
+    assert source in self.vertices
+AssertionError
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=2)
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... FAIL
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... FAIL
+test_way_exists (test_dijkstra.DijkstraTest) ... ok
+
+======================================================================
+FAIL: test_no_way (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 28, in test_no_way
+    self.assertEqual([], list(self.graph.dijkstra('a', 'g')))
+AssertionError: Lists differ: [] != ['g']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'g'
+
+- []
++ ['g']
+
+======================================================================
+FAIL: test_vertex_not_exist (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 25, in test_vertex_not_exist
+    self.assertRaises(AssertionError, self.graph.dijkstra('m', 'z'))
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/dijkstra.py", line 15, in dijkstra
+    assert source in self.vertices
+AssertionError
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=2)
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... FAIL
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... FAIL
+test_way_exists (test_dijkstra.DijkstraTest) ... ok
+
+======================================================================
+FAIL: test_no_way (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 28, in test_no_way
+    self.assertEqual([], list(self.graph.dijkstra('a', 'g')))
+AssertionError: Lists differ: [] != ['g']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'g'
+
+- []
++ ['g']
+
+======================================================================
+FAIL: test_vertex_not_exist (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 25, in test_vertex_not_exist
+    self.assertRaises(Exception, self.graph.dijkstra('m', 'z'))
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/dijkstra.py", line 15, in dijkstra
+    assert source in self.vertices
+AssertionError
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=2)
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... FAIL
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ...
+ERROR
+test_way_exists (test_dijkstra.DijkstraTest) ... ok
+
+======================================================================
+ERROR: test_vertex_not_exist (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 28, in test_vertex_not_exist
+    self.assertTrue('AssertionError' in context.exception)
+TypeError: argument of type 'AssertionError' is not iterable
+
+======================================================================
+FAIL: test_no_way (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 32, in test_no_way
+    self.assertEqual([], list(self.graph.dijkstra('a', 'g')))
+AssertionError: Lists differ: [] != ['g']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'g'
+
+- []
++ ['g']
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1, errors=1)
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... FAIL
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... DEBUG: 'z'
+ERROR
+test_way_exists (test_dijkstra.DijkstraTest) ... ok
+
+======================================================================
+ERROR: test_vertex_not_exist (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 28, in test_vertex_not_exist
+    self.assertTrue('AssertionError' in context.exception)
+TypeError: argument of type 'KeyError' is not iterable
+
+======================================================================
+FAIL: test_no_way (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 32, in test_no_way
+    self.assertEqual([], list(self.graph.dijkstra('a', 'g')))
+AssertionError: Lists differ: [] != ['g']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'g'
+
+- []
++ ['g']
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=1, errors=1)
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... FAIL
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... DEBUG: 'z'
+FAIL
+test_way_exists (test_dijkstra.DijkstraTest) ... ok
+
+======================================================================
+FAIL: test_no_way (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 32, in test_no_way
+    self.assertEqual([], list(self.graph.dijkstra('a', 'g')))
+AssertionError: Lists differ: [] != ['g']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'g'
+
+- []
++ ['g']
+
+======================================================================
+FAIL: test_vertex_not_exist (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 28, in test_vertex_not_exist
+    self.assertTrue('AssertionError' in str(context.exception))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=2)
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... FAIL
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... DEBUG: 'z'
+FAIL
+
+======================================================================
+FAIL: test_no_way (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 32, in test_no_way
+    self.assertEqual([], list(self.graph.dijkstra('a', 'g')))
+AssertionError: Lists differ: [] != ['g']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'g'
+
+- []
++ ['g']
+
+======================================================================
+FAIL: test_vertex_not_exist (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 28, in test_vertex_not_exist
+    self.assertTrue('AssertionError' in str(context.exception))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+FAILED (failures=2)
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... FAIL
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... ok
+
+======================================================================
+FAIL: test_no_way (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 32, in test_no_way
+    self.assertEqual([], list(self.graph.dijkstra('a', 'g')))
+AssertionError: Lists differ: [] != ['g']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'g'
+
+- []
++ ['g']
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+FAILED (failures=1)
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... FAIL
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... ok
+
+======================================================================
+FAIL: test_no_way (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 32, in test_no_way
+    self.assertEqual([], list(self.graph.dijkstra('a', 'g')))
+AssertionError: Lists differ: [] != ['g']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'g'
+
+- []
++ ['g']
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+FAILED (failures=1)
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... ok
+test_way_exists (test_dijkstra.DijkstraTest) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... DEBUG 'z' DEBUG
+ok
+test_way_exists (test_dijkstra.DijkstraTest) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_dijkstra (unittest.loader._FailedTest) ... ERROR
+
+======================================================================
+ERROR: test_dijkstra (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_dijkstra
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/anaconda3/lib/python3.9/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 30
+    print("DEBUG: " + str(self.graph.dijkstra('a', 'g'))))
+                                                         ^
+SyntaxError: unmatched ')'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... DEBUG: deque(['g'])
+FAIL
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... ok
+test_way_exists (test_dijkstra.DijkstraTest) ... ok
+
+======================================================================
+FAIL: test_no_way (test_dijkstra.DijkstraTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 31, in test_no_way
+    self.assertEqual([], list(self.graph.dijkstra('a', 'g')))
+AssertionError: Lists differ: [] != ['g']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'g'
+
+- []
++ ['g']
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1)
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... ok
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... ok
+test_way_exists (test_dijkstra.DijkstraTest) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_dijkstra (unittest.loader._FailedTest) ... ERROR
+
+======================================================================
+ERROR: test_dijkstra (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_dijkstra
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/opt/anaconda3/lib/python3.9/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/Users/antonsushko/Desktop/Work/Git Repos/unittest_task/test_dijkstra.py", line 37
+    #self.assertEqual(['a', 'd'], list(self.graph.dijkstra("a", "d")))
+                                                                      ^
+SyntaxError: unexpected EOF while parsing
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... ok
+test_two_equal_ways (test_dijkstra.DijkstraTest) ... DEBUG ['a', 'b', 'd']
+ok
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... ok
+test_way_exists (test_dijkstra.DijkstraTest) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... ok
+test_two_equal_ways (test_dijkstra.DijkstraTest) ... DEBUG ['a', 'b', 'd']
+ok
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... ok
+test_way_exists (test_dijkstra.DijkstraTest) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... ok
+test_two_equal_ways (test_dijkstra.DijkstraTest) ... DEBUG ['a', 'b', 'd']
+ok
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... ok
+test_way_exists (test_dijkstra.DijkstraTest) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... ok
+test_two_equal_ways (test_dijkstra.DijkstraTest) ... DEBUG ['a', 'c', 'd']
+ok
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... ok
+test_way_exists (test_dijkstra.DijkstraTest) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... ok
+test_two_equal_ways (test_dijkstra.DijkstraTest) ... DEBUG ['a', 'b', 'd']
+ok
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... ok
+test_way_exists (test_dijkstra.DijkstraTest) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+(base) antonsushko@anton-sushko-2 unittest_task % python -m unittest -v
+test_no_way (test_dijkstra.DijkstraTest) ... ok
+test_two_equal_ways (test_dijkstra.DijkstraTest) ... ok
+test_vertex_not_exist (test_dijkstra.DijkstraTest) ... ok
+test_way_exists (test_dijkstra.DijkstraTest) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+(base) antonsushko@anton-sushko-2 unittest_task %
